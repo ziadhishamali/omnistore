@@ -12,7 +12,7 @@ const TopSection = ({featuredItems, topSellingBrands}) => {
                         <div className="top-right-triangle"></div>
                         <img src={star} alt="star"/>
                     </div>
-                    <span>{item.name}</span>
+                    <span className="item-name">{item.name}</span>
                 </div>
             )
         })
