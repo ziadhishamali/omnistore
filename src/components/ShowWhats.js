@@ -2,16 +2,6 @@ import React from 'react';
 
 const ShowWhats = ({whatsHot}) => {
 
-    const getName = (name) => {
-        let splitedName = name.split(" ");
-        let first = splitedName[0];
-        let last = "";
-        for (let i = 1; i < splitedName.length; i++) {
-            last += splitedName[i] + " ";
-        }
-        return [first, last];
-    }
-
     const showWhats = whatsHot ? (
         whatsHot.map((category, idx) => {
             let color = " orange-text";

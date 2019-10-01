@@ -1,6 +1,9 @@
 import React from 'react';
 import ShowCategory from './ShowCategory';
 import ShowWhats from './ShowWhats';
+import SearchBar from './SearchBar';
+import TopSelling from './TopSelling';
+import Paging from './Paging';
 
 const BodySection = ({popularCategories, whatsHot, topSellingItems}) => {
 
@@ -25,7 +28,17 @@ const BodySection = ({popularCategories, whatsHot, topSellingItems}) => {
             </div>
 
             <div className="right-section">
-
+                <div className="title">
+                    <div className="title-container-left">
+                        <span>Top selling items</span>
+                    </div>
+                    <div className="title-container-right">
+                        <a href="/#">{"+ view all items"}</a>
+                    </div>
+                </div>
+                <SearchBar />
+                <TopSelling topSellingItems={topSellingItems} />
+                <Paging />
             </div>
         </div>
     )
