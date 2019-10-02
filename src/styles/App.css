@@ -96,7 +96,7 @@
   border: 5px solid rgba(121, 121, 121, 0.3);
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 22px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
-  background: linear-gradient(135deg, orange, orangered);
+  background: linear-gradient(135deg, rgb(255, 92, 32), orangered);
   color: white;
   font-weight: bolder;
   outline: none;
@@ -120,6 +120,7 @@
 .cover-image img {
   width: calc((100vw - 200px) / 3);
   height: 395px;
+  margin: 0px -60px;
 }
 
 .cover-image:nth-child(2n + 1) {
