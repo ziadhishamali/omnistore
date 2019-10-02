@@ -177,10 +177,11 @@
   padding: 15px;
   text-decoration: none;
   display: block;
+  transition-duration: 0.2s;
 }
 
 .drop-down-content a:hover {
-  background-color: orangered;
+  color: orangered;
 }
 
 .drop-down:hover .drop-down-content {
