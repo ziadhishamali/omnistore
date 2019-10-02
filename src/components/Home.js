@@ -69,7 +69,7 @@ class Home extends Component {
 
     render() { 
         return (
-            <div>
+            <div className="home">
                 <UpperNav />
                 <Cover coverImages={this.state.coverImages} />
                 <NavBar />

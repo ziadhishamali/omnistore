@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.home {
+  width: 100vw;
+}
+
 .clickable {
   cursor: pointer;
 }
@@ -18,7 +22,7 @@
 }
 
 .brand {
-  margin-right: 500px;
+  margin-right: 35%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,6 +80,7 @@
 
 
 .cover {
+  width: 100%;
   height: 400px;
   background: linear-gradient(to right, gray, lightgray, gray);
   display: flex;
@@ -85,7 +90,6 @@
 }
 
 .cover-prev, .cover-next {
-  margin: 0px 20px;
   width: 45px;
   height: 45px;
   object-fit: contain;
@@ -114,9 +118,12 @@
 }
 
 .cover-image img {
-  width: 450px;
+  width: calc((100vw - 200px) / 3);
   height: 395px;
-  margin: 0px -40px;
+}
+
+.cover-image:nth-child(2n + 1) {
+  opacity: 0.5;
 }
 
 
@@ -212,7 +219,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgb(246, 241, 236);
   padding-bottom: 15px;
 }
@@ -251,7 +258,7 @@
 
 .featured-items-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -304,7 +311,7 @@
 }
 
 .top-selling-brands .title-container-left {
-  width: 100%;
+  width: calc(100% - 40px);
   padding: 20px;
 }
 
@@ -335,6 +342,7 @@
 
 
 .body-section {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -518,7 +526,7 @@
 
 .search-input-text {
   height: 35px;
-  width: 500px;
+  width: calc(100%);
   border-radius: 5px;
   border: 1px solid lightgray;
   margin-right: 10px;
@@ -796,12 +804,26 @@
 
 .bottom-bar {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
   background-color: rgb(55, 36, 36);
+}
+
+.bottom-bar-section-1 {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 50px;
+}
+
+.bottom-bar-section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 100px;
 }
 
 .bottom-bar a {
@@ -814,7 +836,6 @@
 }
 
 .bottom-connect {
-  margin-left: 200px;
   color: orangered;
   font-size: 18px;
   font-weight: 600;
