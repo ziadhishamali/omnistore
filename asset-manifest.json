@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/omnistore/static/css/main.a769cf9f.chunk.css",
+    "main.css": "/omnistore/static/css/main.d839b0b8.chunk.css",
     "main.js": "/omnistore/static/js/main.201f7277.chunk.js",
     "main.js.map": "/omnistore/static/js/main.201f7277.chunk.js.map",
     "runtime-main.js": "/omnistore/static/js/runtime-main.d5a1bc5b.js",
@@ -8,9 +8,9 @@
     "static/js/2.80907a07.chunk.js": "/omnistore/static/js/2.80907a07.chunk.js",
     "static/js/2.80907a07.chunk.js.map": "/omnistore/static/js/2.80907a07.chunk.js.map",
     "index.html": "/omnistore/index.html",
-    "precache-manifest.915c4898d1440359b03955b065a6a17f.js": "/omnistore/precache-manifest.915c4898d1440359b03955b065a6a17f.js",
+    "precache-manifest.ca3406f69ac09002da21e4ff27a8a5cd.js": "/omnistore/precache-manifest.ca3406f69ac09002da21e4ff27a8a5cd.js",
     "service-worker.js": "/omnistore/service-worker.js",
-    "static/css/main.a769cf9f.chunk.css.map": "/omnistore/static/css/main.a769cf9f.chunk.css.map",
+    "static/css/main.d839b0b8.chunk.css.map": "/omnistore/static/css/main.d839b0b8.chunk.css.map",
     "static/media/chat-2.svg": "/omnistore/static/media/chat-2.34835869.svg",
     "static/media/facebook.png": "/omnistore/static/media/facebook.9b1cf8ae.png",
     "static/media/heart-2.svg": "/omnistore/static/media/heart-2.9b613ce3.svg",
