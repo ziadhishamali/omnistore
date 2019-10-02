@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UpperNav from './UpperNav';
 import Cover from './Cover';
 import NavBar from './NavBar';
-import { db } from './firebase';
+import { db, storage } from './firebase';
 import Content from './Content';
 
 class Home extends Component {
@@ -19,6 +19,7 @@ class Home extends Component {
         let popularCategories = [];
         let whatsHot = [];
         let topSellingItems = [];
+        let coverImages = [];
         db.collection("featured-items").limit(4).onSnapshot(snapshotQuery => {
             snapshotQuery.forEach(doc => {
                 featuredItems.push(doc.data());
@@ -53,13 +54,24 @@ class Home extends Component {
             })
             this.setState({topSellingItems})
         });
+
+        storage.ref('images/suit-1.png').getDownloadURL().then(url => {
+            coverImages.push(url);
+            storage.ref('images/suit-2.png').getDownloadURL().then(url => {
+                coverImages.push(url);
+                storage.ref('images/suit-3.png').getDownloadURL().then(url => {
+                    coverImages.push(url);
+                    this.setState({coverImages});
+                });
+            });
+        });
     }
 
     render() { 
         return (
             <div>
                 <UpperNav />
-                <Cover />
+                <Cover coverImages={this.state.coverImages} />
                 <NavBar />
                 <Content
                     featuredItems={this.state.featuredItems}

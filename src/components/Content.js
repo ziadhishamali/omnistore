@@ -6,7 +6,7 @@ import BottomSection from './BottomSection';
 const Content = ({featuredItems, topSellingBrands, popularCategories, whatsHot, topSellingItems}) => {
     return (
         <div className="content">
-            <TopSection featuredItems={featuredItems} topSellingBrands={topSellingBrands}/>
+            <TopSection featuredItems={featuredItems} topSellingBrands={topSellingBrands} />
             <BodySection popularCategories={popularCategories} whatsHot={whatsHot} topSellingItems={topSellingItems} />
             <BottomSection />
         </div>

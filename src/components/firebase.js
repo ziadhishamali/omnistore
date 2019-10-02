@@ -5,7 +5,7 @@ var firebaseConfig = {
     authDomain: "omnistore-ff6df.firebaseapp.com",
     databaseURL: "https://omnistore-ff6df.firebaseio.com",
     projectId: "omnistore-ff6df",
-    storageBucket: "",
+    storageBucket: "omnistore-ff6df.appspot.com",
     messagingSenderId: "496523278027",
     appId: "1:496523278027:web:617ab67bf5afe29e1ccd4e"
 };
